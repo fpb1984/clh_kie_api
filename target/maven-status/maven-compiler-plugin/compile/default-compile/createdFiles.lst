@@ -1,0 +1,16 @@
+cl/clh/poc/integracion/RemoteConfiguration$Type.class
+cl/clh/poc/integracion/service/BpmService$2.class
+cl/clh/poc/integracion/RemoteConfiguration$PreemptiveAuth.class
+cl/clh/poc/integracion/Application.class
+cl/clh/poc/integracion/service/BpmService$3.class
+cl/clh/poc/integracion/rest/KieServerRest.class
+cl/clh/poc/integracion/dto/RequestKieServerClientTO.class
+cl/clh/poc/integracion/PamIntegrationConfig.class
+cl/clh/poc/integracion/RemoteConfiguration.class
+cl/clh/poc/model/Propuesta.class
+cl/clh/poc/integracion/KieAlternative.class
+cl/clh/poc/integracion/service/Command.class
+cl/clh/poc/integracion/service/BpmService$1.class
+cl/clh/poc/integracion/service/BpmService.class
+cl/clh/poc/integracion/RestRequestHelper.class
+cl/clh/poc/integracion/dto/ResponseAPI.class
