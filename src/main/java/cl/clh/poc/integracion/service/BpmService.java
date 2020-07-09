@@ -38,39 +38,12 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectMapper.DefaultTyping;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.jsontype.TypeResolverBuilder;
 
 import cl.clh.poc.integracion.KieAlternative;
 import cl.clh.poc.integracion.dto.RequestKieServerClientTO;
 import cl.clh.poc.model.Propuesta;
-import cl.fiscalia.rgp.causapenal.model.AplicacionPauta;
-import cl.fiscalia.rgp.causapenal.model.Causa;
-import cl.fiscalia.rgp.causapenal.model.Delito;
-import cl.fiscalia.rgp.causapenal.model.Denuncia;
-import cl.fiscalia.rgp.causapenal.model.Diligencia;
-import cl.fiscalia.rgp.causapenal.model.Documento;
-import cl.fiscalia.rgp.causapenal.model.EspecieDinero;
-import cl.fiscalia.rgp.causapenal.model.InstruccionDiligencia;
-import cl.fiscalia.rgp.causapenal.model.MedidaProteccion;
-import cl.fiscalia.rgp.causapenal.model.SujetoInterviniente;
-import cl.fiscalia.rgp.causapenal.model.tipo.EstadoCausa;
-import cl.fiscalia.rgp.causapenal.model.tipo.EstadoCivil;
-import cl.fiscalia.rgp.causapenal.model.tipo.Fiscalia;
-import cl.fiscalia.rgp.causapenal.model.tipo.Genero;
-import cl.fiscalia.rgp.causapenal.model.tipo.Institucion;
-import cl.fiscalia.rgp.causapenal.model.tipo.MedioRecepcion;
-import cl.fiscalia.rgp.causapenal.model.tipo.Pais;
-import cl.fiscalia.rgp.causapenal.model.tipo.Region;
-import cl.fiscalia.rgp.causapenal.model.tipo.TipoDelito;
-import cl.fiscalia.rgp.causapenal.model.tipo.TipoDenuncia;
-import cl.fiscalia.rgp.causapenal.model.tipo.TipoDocumental;
-import cl.fiscalia.rgp.causapenal.model.tipo.TipoDocumento;
-import cl.fiscalia.rgp.causapenal.model.tipo.TipoEspecie;
-import cl.fiscalia.rgp.causapenal.model.tipo.TipoSujetoInterviniente;
-import cl.fiscalia.rgp.causapenal.model.tipo.TipoUnidadMedida;
-import cl.fiscalia.rgp.causapenal.model.tipo.UnidadPolicialOrganismo;
 
 
 @Service

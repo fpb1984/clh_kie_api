@@ -76,14 +76,6 @@
 			<version>20160810</version>
 		</dependency>
 		
-		<!-- MODELO DATOS AUX - PROCESO CAUSA PENAL -->
-		<dependency>		  
-		  <groupId>fiscalia.rpg.bpm.models</groupId>
-		  <artifactId>rgp-causa-penal-model</artifactId>
-		  <version>0.0.1</version>
-		</dependency>
-		
-		
 		
 		
 	</dependencies>

@@ -1,2 +1,2 @@
-# clh-kieserver-client-api
+# rgp-kieserver-client-api
 

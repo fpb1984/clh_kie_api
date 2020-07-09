@@ -1,12 +1,8 @@
 package cl.clh.poc.integracion.dto;
 
 import java.io.Serializable;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-
-import cl.fiscalia.rgp.causapenal.model.Causa;
 
 
 public class RequestKieServerClientTO implements Serializable{
@@ -31,8 +27,6 @@ public class RequestKieServerClientTO implements Serializable{
 	
 	private List<Long> listTasks;
 	
-	private Causa causa;
-
 
 	public RequestKieServerClientTO() {}
 
@@ -102,16 +96,6 @@ public class RequestKieServerClientTO implements Serializable{
 
 	public void setParams(HashMap<String, Object> params) {
 		this.params = params;
-	}
-
-
-	public Causa getCausa() {
-		return causa;
-	}
-
-
-	public void setCausa(Causa causa) {
-		this.causa = causa;
 	}
 
 
