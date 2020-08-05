@@ -430,7 +430,7 @@ public class BpmService {
 			params.put("propuestasOUT", propuestas);
 			
 			log.info("taskService - complete tarea: " + request.getTaskId());
-			userTaskClient.completeTask(containerId, request.getTaskId(), request.getUserId(), request.getParams());
+			userTaskClient.completeTask(containerId, request.getTaskId(), request.getUserId(), params);
 			exito = true;
 		}
 
