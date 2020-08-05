@@ -424,6 +424,11 @@ public class BpmService {
 			exito = true;
 		}
 		if(task.getStatus().equals("InProgress")){
+			
+			List<Propuesta> propuestas = this.toList((List<Map<String,Object>>)request.getParams().get("propuestas"));
+			Map<String,Object> params = new HashMap<String,Object>();
+			params.put("propuestasOUT", propuestas);
+			
 			log.info("taskService - complete tarea: " + request.getTaskId());
 			userTaskClient.completeTask(containerId, request.getTaskId(), request.getUserId(), request.getParams());
 			exito = true;
