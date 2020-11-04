@@ -263,6 +263,18 @@ public class KieServerRest {
 		
 	}
 	
+	@GetMapping(value = "/checkInstanceAlreadyDone")
+	public boolean checkInstance(@RequestParam String userId, @RequestParam String pass, @RequestParam String varName, @RequestParam String varVal, @RequestParam String periodo){
+		logger.info("[KieServerRest - obtener tarea Actual]");
+		response = new ResponseAPI();
+		RequestKieServerClientTO request = new RequestKieServerClientTO();
+		request.setUserId(userId);
+		request.setPassword(pass);
+		
+		return service.checkInstanceAlreadyDone(request, varName, varVal, periodo);
+		
+	}
+	
 	
 	@PostMapping(value = "/getVariablesTask")
 	public ResponseEntity<?> getVariablesTask(@RequestBody RequestKieServerClientTO request){
