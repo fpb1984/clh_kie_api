@@ -214,7 +214,7 @@ public class BpmService {
 		
 		for(ProcessInstance pi:instances)
 			for(ProcessInstance pi2:instances2)
-				if(pi.equals(pi2))
+				if(pi.getId()==pi2.getId())
 					return true;
 			
 		return false;		
