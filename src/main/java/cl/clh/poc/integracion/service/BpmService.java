@@ -208,12 +208,14 @@ public class BpmService {
 	public boolean checkInstanceAlreadyDone(RequestKieServerClientTO request, String varName, String varVal, String periodo){				
 		queryClient = kieServicesClientPam(request.getUserId(), request.getPassword()).getServicesClient(QueryServicesClient.class);
 		List<Integer> status = new ArrayList<>();			
-		status.add(1);
 		status.add(2);
 		List<ProcessInstance> instances = queryClient.findProcessInstancesByVariableAndValue(varName, varVal, status, page, pageSize);
+		List<ProcessInstance> instances2 = queryClient.findProcessInstancesByVariableAndValue("periodo", periodo, status, page, pageSize);
+		
 		for(ProcessInstance pi:instances)
-			if(pi.getVariables().get("periodo")!=null && pi.getVariables().get("periodo").equals(periodo))
-				return true;
+			for(ProcessInstance pi2:instances2)
+				if(pi.equals(pi2))
+					return true;
 			
 		return false;		
 	}
